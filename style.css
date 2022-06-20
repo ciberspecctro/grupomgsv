@@ -1,0 +1,245 @@
+/* Logo y barra del menú */
+
+#logo-radio{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    height: 100px;
+    
+}
+
+#img-logo {
+    border-radius: 50px;
+}
+
+#quality {
+    background-image: url(img/fondo.jpg);
+    background-size: cover;
+    height: 250px;
+    padding-top: 50px;
+    
+}
+
+body {
+    background-color: rgb(14, 13, 13);
+    font-family: Arial;
+    width: auto;
+    height: auto;
+}
+
+#logo {
+    text-align: center;
+    color: white;
+    text-decoration: double;
+    text-decoration-color: black;
+    font-family: Arial;
+    
+}
+
+#barra {
+    height: 85px;
+    background-color:#26272e;
+    text-align: center;
+
+}
+
+#barra ul {
+    list-style: none;
+    display: inline-block;
+    padding:3px;
+}
+
+#barra ul li{
+    float: left;
+    margin-top: 10px;
+}
+
+#barra ul li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 28px;
+}
+
+#barra ul li a:hover{
+    background-color: #222427;
+}
+
+/*Descripción y textos */
+
+#textogen {
+    text-align: center;
+    color: white;
+    line-height: 150%;
+    font-family: Arial;
+    margin: 20px;
+    padding: 90px;
+    
+}
+
+#textodesc {
+    text-align: center;
+    color: white;
+    line-height: 150%;
+    font-family: Arial;
+    font-size: 110%;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 0;
+    
+}
+
+#textoprodu {
+    color: white;
+}
+
+
+/*Productos*/
+
+#imagenes {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 100px;
+    margin: 20px;
+    padding: 90px;
+    flex-direction: row;
+}
+  
+#ima {
+    
+    height: 50vh;
+    min-width: 35vh;
+}
+
+#producto {
+    max-height: 300px;
+    width: 300px;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+
+
+
+/*Contactenos*/
+
+#Telefonos {
+    display: flex;
+    justify-content: center;
+}
+
+#textoconta {
+    text-align: center;
+    color: white;
+    font-size: 13px;
+}
+
+#whatsapp {
+
+    max-height: 30px;
+    width: 30px;
+}
+
+
+
+
+/*Clientes*/
+
+#clientes {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 40px;
+}
+
+#clienteima {
+    border-radius: 50%;
+}
+
+#textocliente {
+    margin-top: -100px;
+    padding: 50px;
+    padding-left: 130px;
+    color: white;
+}
+
+
+
+/*otros*/
+
+
+#precios {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    vertical-align: bottom;
+    margin: 40px;
+    color: white;
+}
+
+/*boton-arriba*/
+
+
+#boton-arriba {
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: bolder;
+
+}
+
+.ir-arriba {
+	display:none;
+	padding:20px;
+	background:#04252c;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+}
+
+
+
+/*Precios index4.html */
+
+#text-price {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    vertical-align: bottom;
+    margin: 40px;
+    color: white;
+    font-family: Arial;
+    font-size: 110%;
+}
+
+#price-software {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#button-software a {
+    display: flex;
+    justify-content: center;
+    background-color: #26272e;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+    width: 250px;
+    height: 20px;
+
+
+}
