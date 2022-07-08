@@ -225,7 +225,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    gap: 30px;
+    gap: 50px;
     flex-wrap: wrap;
 }
 
@@ -240,6 +240,32 @@ body {
     padding: 20px;
     width: 250px;
     height: 20px;
+
+
+}
+
+/* WhatsApp me */
+
+#whatsapp-flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#button-whatsapp a {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #26272e;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+    width: 150px;
+    height: 35px;
 
 
 }
