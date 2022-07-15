@@ -1,4 +1,11 @@
 /* Logo y barra del menú */
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+
+}
 
 #logo-radio{
     display: flex;
@@ -20,7 +27,7 @@
     
 }
 
-body {
+body{
     background-color: rgb(14, 13, 13);
     font-family: Arial;
     width: auto;
@@ -37,33 +44,40 @@ body {
 }
 
 #barra {
-    height: 85px;
+    height: 55px;
     background-color:#26272e;
     text-align: center;
+
+
+    
 
 }
 
 #barra ul {
     list-style: none;
     display: inline-block;
-    padding:3px;
+    padding:5px;
 }
 
 #barra ul li{
+    position: relative;
     float: left;
     margin-top: 10px;
+    
 }
 
 #barra ul li a {
     color: white;
     font-weight: bold;
     text-decoration: none;
-    font-size: 20px;
-    padding: 28px;
+    font-size: 15px;
+    padding: 15px;
+    
+
 }
 
 #barra ul li a:hover{
-    background-color: #222427;
+    background-color: #18191b;
 }
 
 /*Descripción y textos */
@@ -71,7 +85,7 @@ body {
 #textogen {
     text-align: center;
     color: white;
-    line-height: 150%;
+    line-height: 165%;
     font-family: Arial;
     margin: 20px;
     padding: 90px;
@@ -81,7 +95,7 @@ body {
 #textodesc {
     text-align: center;
     color: white;
-    line-height: 150%;
+    line-height: 165%;
     font-family: Arial;
     font-size: 110%;
     margin-left: 16px;
@@ -92,6 +106,7 @@ body {
 
 #textoprodu {
     color: white;
+    line-height: 250%;
 }
 
 
@@ -118,6 +133,7 @@ body {
     width: 300px;
     object-fit: cover;
     vertical-align: bottom;
+    border-radius: 20px;
 }
 
 
@@ -178,7 +194,8 @@ body {
     justify-content: center;
     text-align: center;
     vertical-align: bottom;
-    margin: 40px;
+    margin: 150px;
+    line-height: 165%;
     color: white;
 }
 
@@ -239,7 +256,7 @@ body {
     font-size: 20px;
     padding: 20px;
     width: 250px;
-    height: 20px;
+
 
 
 }
@@ -263,9 +280,123 @@ body {
     font-weight: bold;
     text-decoration: none;
     font-size: 20px;
+    padding: 40px;
+ 
+
+
+}
+
+
+/* Menu responsivo */
+
+#menu-bar {
+    display:none;
+
+}
+
+#label-font {
+
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 28px;
+    position: relative;
+    float: left;
+}
+
+header label{
+    cursor:pointer;
+    display:none;
+}
+
+@media(max-width:991px){
+    #barra {
+        height:85px;
+    }
+
+    #producto {
+        max-height: 250px;
+        width: 250px;
+    }
+
+    #aplications {
+        max-height: 200px;
+        min-height: 200px;
+        width: 200px;
+        
+    }
+}
+
+@media(max-height:576px){
+    #producto {
+        max-height: 200px;
+        width: 200px;
+    }    
+
+    #aplications {
+        max-height: 200px;
+        min-height: 200px;
+        width: 200px;
+        
+    }
+}
+
+
+/* Market Appstore */
+
+#market-appstore {
+    background-image: url(img/fondomarket.png);
+    background-size: cover;
+    height: 250px;
+    padding-top: 50px;
+    
+}
+
+
+
+
+/* Apps */
+
+#app-image {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 70px;
+    margin: 20px;
+    padding: 90px;
+    flex-direction: row;
+}
+  
+#image-app {
+    
+    height: 50vh;
+    min-width: 35vh;
+}
+
+#aplications {
+    border-radius: 20px;
+    max-height: 250px;
+    min-height: 250px;
+    width: 250px;
+    min-width: 250px;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+/* Apps links */
+
+#button-apps a {
+    display: flex;
+    justify-content: center;
+    background-color: #26272e;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
     padding: 20px;
-    width: 150px;
-    height: 35px;
+    width: 250px;
+
 
 
 }
