@@ -1,3 +1,35 @@
+/* Webkit shadow */
+
+@-webkit-keyframes shadow-pop-br {
+    0% {
+      -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+              box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+      -webkit-transform: translateX(0) translateY(0);
+              transform: translateX(0) translateY(0);
+    }
+    100% {
+      -webkit-box-shadow: 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e, 4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e, 8px 8px #3e3e3e;
+              box-shadow: 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e, 4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e, 8px 8px #3e3e3e;
+      -webkit-transform: translateX(-8px) translateY(-8px);
+              transform: translateX(-8px) translateY(-8px);
+    }
+  }
+  @keyframes shadow-pop-br {
+    0% {
+      -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+              box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+      -webkit-transform: translateX(0) translateY(0);
+              transform: translateX(0) translateY(0);
+    }
+    100% {
+      -webkit-box-shadow: 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e, 4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e, 8px 8px #3e3e3e;
+              box-shadow: 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e, 4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e, 8px 8px #3e3e3e;
+      -webkit-transform: translateX(-8px) translateY(-8px);
+              transform: translateX(-8px) translateY(-8px);
+    }
+  }
+
+
 /* Logo y barra del menú */
 * {
     margin: 0; padding: 0;
@@ -46,6 +78,8 @@ body{
 #barra {
     height: 55px;
     background-color:#26272e;
+    display: flex;
+    justify-content: center;
     text-align: center;
 
 
@@ -107,36 +141,8 @@ body{
 #textoprodu {
     color: white;
     line-height: 250%;
+    text-align: center;
 }
-
-
-/*Productos*/
-
-#imagenes {
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: center;
-    gap: 100px;
-    margin: 20px;
-    padding: 90px;
-    flex-direction: row;
-}
-  
-#ima {
-    
-    height: 50vh;
-    min-width: 35vh;
-}
-
-#producto {
-    max-height: 300px;
-    width: 300px;
-    object-fit: cover;
-    vertical-align: bottom;
-    border-radius: 20px;
-}
-
-
 
 
 /*Contactenos*/
@@ -257,8 +263,16 @@ body{
     padding: 20px;
     width: 250px;
 
+    
 
 
+
+}
+
+#button-software :hover {
+
+    -webkit-animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
 
 /* WhatsApp me */
@@ -272,6 +286,7 @@ body{
 }
 
 #button-whatsapp a {
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -284,6 +299,11 @@ body{
  
 
 
+}
+
+#button-whatsapp :hover {
+    -webkit-animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
 
 
@@ -312,7 +332,7 @@ header label{
 
 @media(max-width:991px){
     #barra {
-        height:85px;
+        height:100px;
     }
 
     #producto {
@@ -325,6 +345,25 @@ header label{
         min-height: 200px;
         width: 200px;
         
+    }
+
+    #market-appstore {
+        height: 200px;
+        padding-top: 30px;
+        
+    }
+
+    #textogen {
+        padding-bottom: 90px;
+        
+    }
+
+    /*ODIN-Responsive*/
+
+    #oil-odin {
+        max-height: 100px;
+        max-width: 50px;
+
     }
 }
 
@@ -387,6 +426,7 @@ header label{
 /* Apps links */
 
 #button-apps a {
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     background-color: #26272e;
@@ -399,4 +439,55 @@ header label{
 
 
 
+}
+
+#button-apps :hover {
+
+    -webkit-animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+
+/*ODIN*/
+
+
+#class-odin {
+    background-color: #0f1011;
+    background-size: cover;
+    height: 250px;
+    padding-top: 50px;
+    
+}
+
+#odin-image {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 400px;
+    margin: 20px;
+    padding: 90px;
+    flex-direction: row;
+}
+
+#image-oil {
+    
+    height: 50vh;
+    min-width: 35vh;
+}
+
+#oil-odin {
+    border-radius: 20px;
+    max-height: 400px;
+    min-height: 400px;
+    max-width: 300px;
+    min-width: 300px;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+#odin-text {
+    color: white;
+    line-height: 250%;
+    text-align: center;
+    width: 300px;
 }
