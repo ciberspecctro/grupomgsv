@@ -75,12 +75,20 @@ body{
     
 }
 
+#everyone-nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
 #barra {
     height: 55px;
     background-color:#26272e;
     display: flex;
     justify-content: center;
     text-align: center;
+    position: fixed;
+    width: 100%;
 
 
     
@@ -330,9 +338,16 @@ header label{
     display:none;
 }
 
+@media(max-height:512px){
+    #barra {
+        max-height:58px;
+    }
+
+}
+
 @media(max-width:991px){
     #barra {
-        height:100px;
+        height:65px;
     }
 
     #producto {
